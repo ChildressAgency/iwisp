@@ -75,3 +75,14 @@ font-style: normal;
 font-weight: 400;
 font-style: normal;
     }
+    @font-face{
+        font-family:"Museo Sans W01_n5";
+        src:url("Fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix");
+        src:url("Fonts/7e90c1ee-e4b1-46f0-9134-93a8ba421545.eot?#iefix") format("eot"),url("Fonts/009ca58d-46af-4651-a359-f0ae2301085b.woff2") format("woff2"),url("Fonts/3619b5f4-8df9-44f5-8c53-b7c236e9c74e.woff") format("woff"),url("Fonts/9b2d949a-4e1c-435c-8412-f377c80583ae.ttf") format("truetype"),url("Fonts/7a319e11-05eb-49ce-bdb7-f692766e6477.svg#7a319e11-05eb-49ce-bdb7-f692766e6477") format("svg");
+font-weight: 500;
+font-style: normal;
+    }
