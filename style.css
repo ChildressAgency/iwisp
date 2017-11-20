@@ -378,6 +378,8 @@ footer .copyright>p>a:focus{
   width:100%;
   height:100%;
   border-spacing:0;
+  height:82px;
+  padding:8px;
 }
 .tier h2{
   margin-top:0;
@@ -386,10 +388,11 @@ footer .copyright>p>a:focus{
   font-family:Museo, serif;
   font-weight:300;
   text-transform:uppercase;
-  padding:8px;
-  height:82px;
   vertical-align:middle;
   display:table-cell;
+}
+.tier .tier-subheader{
+  padding:15px;
 }
 .tier h3{
   font-size:45px;
@@ -397,12 +400,14 @@ footer .copyright>p>a:focus{
   font-weight:900;
   margin-top:0;
   margin-bottom:0;
-  padding:15px;
 }
 .tier h3>span{
   font-size:18px;
   font-weight:300;
   display:block;
+}
+.tier h3>a{
+  color:#fff;
 }
 .tier .tier-body{
   padding:15px 15px 100px;
@@ -420,24 +425,76 @@ footer .copyright>p>a:focus{
   right:15px;
   bottom:15px;
 }
+.tier .tier-body>p{
+  text-align:left;
+}
+.tier .tier-subheader>p{
+  color:#fff;
+  line-height:1.2em;
+}
+.tier .tier-subheader>p>span{
+  font-size:24px;
+  display:block;
+  margin-top:5px;
+}
 
-#tier1 h2{
+#tier1 .tier-header{
   background-color:#cc6600;
 }
-#tier1 h3{
+#tier1 .tier-subheader{
   background-color:#d3a06d;
 }
-#tier2 h2{
+#tier2 .tier-header{
   background-color:#177345;
 }
-#tier2 h3{
+#tier2 .tier-subheader{
   background-color:#4c8f6e;
 }
-#tier3 h2{
+#tier3 .tier-header{
   background-color:#2d567e;
 }
-#tier3 h3{
+#tier3 .tier-subheader{
   background-color:#98a8b7;
+}
+
+.plain-header{
+  text-align:center;
+  background-color:#006633;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+.plain-header h1{
+  color:#fff;
+}
+
+#payOption1 .tier-header{
+  background-color:#64abc5;
+}
+#payOption1 .tier-subheader{
+  background-color:#9ec2cf;
+}
+#payOption2 .tier-header{
+  background-color:#187446;
+}
+#payOption2 .tier-subheader{
+  background-color:#519473;
+}
+#payOption3 .tier-header{
+  background-color:#315981;
+}
+#payOption3 .tier-subheader{
+  background-color:#a2b1c1;
+}
+
+#payOption1 .tier-subheader,
+#payOption2 .tier-subheader,
+#payOption3 .tier-subheader{
+  height:108px;
+}
+#payOption1 .tier-body,
+#payOption2 .tier-body,
+#payOption3 .tier-body{
+  padding-bottom:15px;
 }
 
 
