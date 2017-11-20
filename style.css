@@ -98,6 +98,12 @@ body{
   background-size:cover;
 }
 
+h1{
+  color:#006633;
+  text-transform:uppercase;
+  font-weight:500;
+}
+
 a,
 input[type="submit"]{
   -webkit-transition:all .3s ease;
@@ -208,6 +214,9 @@ input[type="submit"]{
 #hero{
   background-repeat:no-repeat;
   background-size:cover;
+}
+.hero{
+  box-shadow:0px 25px 40px -15px #666;
 }
 #hero.hp-hero{
   padding-top:40px;
@@ -352,6 +361,85 @@ footer .copyright>p>a:focus{
   box-shadow:none;
 }
 
+.price-comparisons.container-sm-height{
+  border-spacing:15px;
+}
+.price-comparisons .col-sm-height{
+  background-color:rgba(153,153,153,.2);
+  padding-left:0;
+  padding-right:0;
+  vertical-align:top;
+}
+.tier{
+  text-align:center;
+}
+.tier .tier-header{
+  display:table;
+  width:100%;
+  height:100%;
+  border-spacing:0;
+}
+.tier h2{
+  margin-top:0;
+  margin-bottom:0;
+  color:#fff;
+  font-family:Museo, serif;
+  font-weight:300;
+  text-transform:uppercase;
+  padding:8px;
+  height:82px;
+  vertical-align:middle;
+  display:table-cell;
+}
+.tier h3{
+  font-size:45px;
+  color:#fff;
+  font-weight:900;
+  margin-top:0;
+  margin-bottom:0;
+  padding:15px;
+}
+.tier h3>span{
+  font-size:18px;
+  font-weight:300;
+  display:block;
+}
+.tier .tier-body{
+  padding:15px 15px 100px;
+}
+.tier .tier-body>h4{
+  font-family:Museo, serif;
+}
+.tier .tier-body>ul{
+  list-style-position:inside;
+  padding-left:0;
+}
+.tier .tier-body>.btn-main{
+  position:absolute;
+  left:15px;
+  right:15px;
+  bottom:15px;
+}
+
+#tier1 h2{
+  background-color:#cc6600;
+}
+#tier1 h3{
+  background-color:#d3a06d;
+}
+#tier2 h2{
+  background-color:#177345;
+}
+#tier2 h3{
+  background-color:#4c8f6e;
+}
+#tier3 h2{
+  background-color:#2d567e;
+}
+#tier3 h3{
+  background-color:#98a8b7;
+}
+
 
 @media (max-width:767px){
   .masthead{
@@ -388,6 +476,12 @@ footer .copyright>p>a:focus{
   .coverage-content>h2{
     font-size:32px;
   }
+  .price-comparisons .col-sm-height{
+    max-width:260px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:40px;
+  }
 }
 @media (min-width:768px){
   .navbar-header{
@@ -408,5 +502,15 @@ footer .copyright>p>a:focus{
   }
   .nav.nav-justified>li:first-child:before{
     border:none;
+  }
+  .container-sm-height{
+    display:table;
+  }
+  .row-sm-height{
+    display:table-row;
+  }
+  .col-sm-height{
+    display:table-cell;
+    float:none;
   }
 }
