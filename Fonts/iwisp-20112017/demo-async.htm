@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Webfonts Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+	    body, textarea { font-family:Arial, Sans-Serif; line-height:1.6em; font-size:13px; }
+	    h1 { font-size:3em; }
+	    h2, h3 { color:#999; }
+	    .content { width:780px; margin: 20px auto 40px; }
+	    .demo { font-weight:bold; font-style:normal; color: #999 }
+	    .fontdisplay {font-size:2em;line-height:150%;margin: 10px 40px 0px 0px;}
+	    .guidelines { color:#333; }
+	    pre { padding:0 0 0 20px; }
+	    hr { border:0; border-bottom:1px solid #537094; margin:20px 0; }
+	    .link { color: #537094;text-decoration:none; font-weight:bold;}
+	    .uc {text-transform:uppercase}
+	    #para1{font-family:"Museo W01_n2";}
+#para2{font-family:"Museo W01_n3";}
+#para3{font-family:"Museo W01_n5";}
+#para4{font-family:"Museo Sans W01_n1";}
+#para5{font-family:"Museo Sans W01_n2";}
+#para6{font-family:"Museo Sans W01_n3";}
+#para7{font-family:"Museo Sans W01_n4";}
+
+@media all and (min-width: 0px) {
+#para1{font-family:'Museo W01'; font-weight: 200; font-style: normal;}
+#para2{font-family:'Museo W01'; font-weight: 300; font-style: normal;}
+#para3{font-family:'Museo W01'; font-weight: 500; font-style: normal;}
+#para4{font-family:'Museo Sans W01'; font-weight: 100; font-style: normal;}
+#para5{font-family:'Museo Sans W01'; font-weight: 200; font-style: normal;}
+#para6{font-family:'Museo Sans W01'; font-weight: 300; font-style: normal;}
+#para7{font-family:'Museo Sans W01'; font-weight: 400; font-style: normal;}
+
+}
+    </style>
+    <style type="text/css">
+    @font-face{
+        font-family:"Museo W01_n2";
+        src:url("Fonts/33e3dd38-a7c3-4a78-9660-90a0e7406419.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo W01";
+        src:url("Fonts/33e3dd38-a7c3-4a78-9660-90a0e7406419.eot?#iefix");
+        src:url("Fonts/33e3dd38-a7c3-4a78-9660-90a0e7406419.eot?#iefix") format("eot"),url("Fonts/d9dabe05-624c-4f28-8eee-b3b6f1841abf.woff2") format("woff2"),url("Fonts/827f2f08-a8d3-40b2-9795-927b59905269.woff") format("woff"),url("Fonts/92143848-9290-4516-80fc-ebf83b053307.ttf") format("truetype"),url("Fonts/b0d9d7a5-5c5b-439c-afa5-2c875dcf8ea2.svg#b0d9d7a5-5c5b-439c-afa5-2c875dcf8ea2") format("svg");
+font-weight: 200;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo W01_n3";
+        src:url("Fonts/3a1a59f5-1f68-4ebd-84ad-a9048fe78e39.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo W01";
+        src:url("Fonts/3a1a59f5-1f68-4ebd-84ad-a9048fe78e39.eot?#iefix");
+        src:url("Fonts/3a1a59f5-1f68-4ebd-84ad-a9048fe78e39.eot?#iefix") format("eot"),url("Fonts/52be0694-00c1-4daa-8782-419021c48e95.woff2") format("woff2"),url("Fonts/dee84039-06ae-4a61-89c4-709e594804a3.woff") format("woff"),url("Fonts/9547becc-44c3-4b00-8568-8d3debb4d299.ttf") format("truetype"),url("Fonts/5d61f150-54fd-4fa1-98ff-155e222626e1.svg#5d61f150-54fd-4fa1-98ff-155e222626e1") format("svg");
+font-weight: 300;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo W01_n5";
+        src:url("Fonts/6eae3489-a367-4dd0-8e8d-f04af6173895.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo W01";
+        src:url("Fonts/6eae3489-a367-4dd0-8e8d-f04af6173895.eot?#iefix");
+        src:url("Fonts/6eae3489-a367-4dd0-8e8d-f04af6173895.eot?#iefix") format("eot"),url("Fonts/30cf41ae-6706-4b43-af3c-b78d041b321f.woff2") format("woff2"),url("Fonts/6c2eb955-de0e-4fee-88d2-b7d4efd3b231.woff") format("woff"),url("Fonts/d7334e65-d173-4627-9343-888384cb4ba8.ttf") format("truetype"),url("Fonts/1974d8aa-f576-4359-ad9d-67a183f915c8.svg#1974d8aa-f576-4359-ad9d-67a183f915c8") format("svg");
+font-weight: 500;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo Sans W01_n1";
+        src:url("Fonts/e14e9fd6-0631-4491-b873-211c7b6f926c.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/e14e9fd6-0631-4491-b873-211c7b6f926c.eot?#iefix");
+        src:url("Fonts/e14e9fd6-0631-4491-b873-211c7b6f926c.eot?#iefix") format("eot"),url("Fonts/fd9d5b5d-71c1-4db0-bf20-cd7e3ce4d069.woff2") format("woff2"),url("Fonts/e976d680-12b6-411e-9f79-0ef9287f484d.woff") format("woff"),url("Fonts/81780024-f1ae-4135-a0ae-d0bab2c19986.ttf") format("truetype"),url("Fonts/98fa899e-fa41-4563-b67a-33d373ba60ee.svg#98fa899e-fa41-4563-b67a-33d373ba60ee") format("svg");
+font-weight: 100;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo Sans W01_n2";
+        src:url("Fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix");
+        src:url("Fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix") format("eot"),url("Fonts/1d3191cd-ae8c-45e2-bb04-11e96d8fa974.woff2") format("woff2"),url("Fonts/b252d464-65cb-4950-88f7-ac0a1bf79b75.woff") format("woff"),url("Fonts/b3d18117-6517-4d3f-afc1-774086ff5fc1.ttf") format("truetype"),url("Fonts/b9bed509-0816-43d8-b14b-7525a21f4bde.svg#b9bed509-0816-43d8-b14b-7525a21f4bde") format("svg");
+font-weight: 200;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo Sans W01_n3";
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix");
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot"),url("Fonts/d9896899-f08c-4750-a874-a9e10d83c2cb.woff2") format("woff2"),url("Fonts/d42dd843-62b0-4623-8855-d5882512c3c9.woff") format("woff"),url("Fonts/6d532ccb-086c-4000-bab2-5d16862fcf01.ttf") format("truetype"),url("Fonts/f56b7407-f97b-4cb3-9ce6-4e13065eec93.svg#f56b7407-f97b-4cb3-9ce6-4e13065eec93") format("svg");
+font-weight: 300;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo Sans W01_n4";
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix");
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot"),url("Fonts/e2d37f34-6bca-473c-b64d-93811f4dc046.woff2") format("woff2"),url("Fonts/eadbb595-a394-48fc-834f-8bf5da15cddf.woff") format("woff"),url("Fonts/9bcba093-b507-4b9b-9c83-303003d3815c.ttf") format("truetype"),url("Fonts/9a2af429-2624-4bd1-a676-8f0eed3e7e31.svg#9a2af429-2624-4bd1-a676-8f0eed3e7e31") format("svg");
+font-weight: 400;
+font-style: normal;
+    }
+</style>
+<script type="text/javascript">
+var MTIProjectId='86852630-3e63-45b3-b9aa-b86577842a89';
+ (function() {
+        var mtiTracking = document.createElement('script');
+        mtiTracking.type='text/javascript';
+        mtiTracking.async='true';
+         mtiTracking.src='mtiFontTrackingCode.js';
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+   })();
+</script>
+</head>
+<body>
+    <div class="content">
+        <h1 class="demo">Fonts.com Web fonts</h1>
+        <p style="margin-top: -10px; font-size: 1.5em; color: #666"><b>@font-face implementation instructions</b></p>
+        <p>The asynchronous script loads in the background allowing the other elements of your website to load first and undeterred.</p>
+        <hr />
+        <p class="uc">The fonts contained in this kit are:</p>
+        <div class="fontdisplay">
+            <div id="para1"> Museo W01 300 </div>
+<div id="para2"> Museo W01 500 </div>
+<div id="para3"> Museo W01 900 </div>
+<div id="para4"> Museo™ Sans W01 100 </div>
+<div id="para5"> Museo™ Sans W01 300 </div>
+<div id="para6"> Museo™ Sans W01 500 </div>
+<div id="para7"> Museo™ Sans W01 700 </div>
+
+        </div>
+        <hr />
+        Click here for <a class="link uc" href="demo.htm">css only</a> web fonts implementation
+        <hr />
+        <div class="guidelines">
+            <h2>CSS Implementation Guidelines</h2>
+            <p>You and any third party web font hosting service are responsible for ensuring that the font software in the self-hosting kit, in its original format, can only be used on the Web Sites for which the self-hosting kit was downloaded and cannot be used or referenced by any other web site. This includes, but is not limited to installing adequate technical protection measures that restrict the use and/or access to the font software, for instance by utilizing JavaScript or access control mechanism for cross-origin resource sharing and protecting against use on web sites other than the Web Sites for which the self-hosting kit was downloaded by restricting domain access only to such Web Sites. You must also retain the pageview tracking code on any Web Site that you self-host. In the event this Agreement terminates for any reason, the font software included with the self-hosting kit must be deleted from the server and all copies must be destroyed or returned to Monotype Imaging.</p>
+            <p>View <a class="link" href="http://www.fonts.com/info/legal/eula/web-fonts" target="_blank">"WEB FONT SOFTWARE" LICENSE AGREEMENT</a></p>
+            <h2>Asynchronous Implementation (Requires JavaScript)</h2>
+            <p>Font file names have been obfuscated to protect the font software. You can identify font format based on file ending:</p>
+            <ul>
+                <li>1 - TrueType (ttf)</li>
+                <li>2 - Embedded OpenType (eot)</li>
+                <li>3 - Web Open Font Format (woff)</li>
+                <li>4 - Web Open Font Format version 2 (woff2)</li>
+                <li>5 - Scalable Vector Graphics (svg)</li>
+                
+            </ul>
+            <p class="uc" style="margin: 20px 0px -20px;"><b>Copy and paste following code in head section of the page</b></p>
+            <hr />
+            <textarea style="width: 830px; height: 350px; border: 1 #fff solid; background-color: #fcfcfc;"><style type="text/css">
+    @font-face{
+        font-family:"Museo W01_n2";
+        src:url("Fonts/33e3dd38-a7c3-4a78-9660-90a0e7406419.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo W01";
+        src:url("Fonts/33e3dd38-a7c3-4a78-9660-90a0e7406419.eot?#iefix");
+        src:url("Fonts/33e3dd38-a7c3-4a78-9660-90a0e7406419.eot?#iefix") format("eot"),url("Fonts/d9dabe05-624c-4f28-8eee-b3b6f1841abf.woff2") format("woff2"),url("Fonts/827f2f08-a8d3-40b2-9795-927b59905269.woff") format("woff"),url("Fonts/92143848-9290-4516-80fc-ebf83b053307.ttf") format("truetype"),url("Fonts/b0d9d7a5-5c5b-439c-afa5-2c875dcf8ea2.svg#b0d9d7a5-5c5b-439c-afa5-2c875dcf8ea2") format("svg");
+font-weight: 200;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo W01_n3";
+        src:url("Fonts/3a1a59f5-1f68-4ebd-84ad-a9048fe78e39.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo W01";
+        src:url("Fonts/3a1a59f5-1f68-4ebd-84ad-a9048fe78e39.eot?#iefix");
+        src:url("Fonts/3a1a59f5-1f68-4ebd-84ad-a9048fe78e39.eot?#iefix") format("eot"),url("Fonts/52be0694-00c1-4daa-8782-419021c48e95.woff2") format("woff2"),url("Fonts/dee84039-06ae-4a61-89c4-709e594804a3.woff") format("woff"),url("Fonts/9547becc-44c3-4b00-8568-8d3debb4d299.ttf") format("truetype"),url("Fonts/5d61f150-54fd-4fa1-98ff-155e222626e1.svg#5d61f150-54fd-4fa1-98ff-155e222626e1") format("svg");
+font-weight: 300;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo W01_n5";
+        src:url("Fonts/6eae3489-a367-4dd0-8e8d-f04af6173895.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo W01";
+        src:url("Fonts/6eae3489-a367-4dd0-8e8d-f04af6173895.eot?#iefix");
+        src:url("Fonts/6eae3489-a367-4dd0-8e8d-f04af6173895.eot?#iefix") format("eot"),url("Fonts/30cf41ae-6706-4b43-af3c-b78d041b321f.woff2") format("woff2"),url("Fonts/6c2eb955-de0e-4fee-88d2-b7d4efd3b231.woff") format("woff"),url("Fonts/d7334e65-d173-4627-9343-888384cb4ba8.ttf") format("truetype"),url("Fonts/1974d8aa-f576-4359-ad9d-67a183f915c8.svg#1974d8aa-f576-4359-ad9d-67a183f915c8") format("svg");
+font-weight: 500;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo Sans W01_n1";
+        src:url("Fonts/e14e9fd6-0631-4491-b873-211c7b6f926c.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/e14e9fd6-0631-4491-b873-211c7b6f926c.eot?#iefix");
+        src:url("Fonts/e14e9fd6-0631-4491-b873-211c7b6f926c.eot?#iefix") format("eot"),url("Fonts/fd9d5b5d-71c1-4db0-bf20-cd7e3ce4d069.woff2") format("woff2"),url("Fonts/e976d680-12b6-411e-9f79-0ef9287f484d.woff") format("woff"),url("Fonts/81780024-f1ae-4135-a0ae-d0bab2c19986.ttf") format("truetype"),url("Fonts/98fa899e-fa41-4563-b67a-33d373ba60ee.svg#98fa899e-fa41-4563-b67a-33d373ba60ee") format("svg");
+font-weight: 100;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo Sans W01_n2";
+        src:url("Fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix");
+        src:url("Fonts/fd479df2-01b0-4e3a-a411-915c477f1352.eot?#iefix") format("eot"),url("Fonts/1d3191cd-ae8c-45e2-bb04-11e96d8fa974.woff2") format("woff2"),url("Fonts/b252d464-65cb-4950-88f7-ac0a1bf79b75.woff") format("woff"),url("Fonts/b3d18117-6517-4d3f-afc1-774086ff5fc1.ttf") format("truetype"),url("Fonts/b9bed509-0816-43d8-b14b-7525a21f4bde.svg#b9bed509-0816-43d8-b14b-7525a21f4bde") format("svg");
+font-weight: 200;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo Sans W01_n3";
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix");
+        src:url("Fonts/a29947fd-0c53-492b-b2f4-399b01153b30.eot?#iefix") format("eot"),url("Fonts/d9896899-f08c-4750-a874-a9e10d83c2cb.woff2") format("woff2"),url("Fonts/d42dd843-62b0-4623-8855-d5882512c3c9.woff") format("woff"),url("Fonts/6d532ccb-086c-4000-bab2-5d16862fcf01.ttf") format("truetype"),url("Fonts/f56b7407-f97b-4cb3-9ce6-4e13065eec93.svg#f56b7407-f97b-4cb3-9ce6-4e13065eec93") format("svg");
+font-weight: 300;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Museo Sans W01_n4";
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Museo Sans W01";
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix");
+        src:url("Fonts/3d0a39cf-115c-4800-9b1e-31c7912abfc2.eot?#iefix") format("eot"),url("Fonts/e2d37f34-6bca-473c-b64d-93811f4dc046.woff2") format("woff2"),url("Fonts/eadbb595-a394-48fc-834f-8bf5da15cddf.woff") format("woff"),url("Fonts/9bcba093-b507-4b9b-9c83-303003d3815c.ttf") format("truetype"),url("Fonts/9a2af429-2624-4bd1-a676-8f0eed3e7e31.svg#9a2af429-2624-4bd1-a676-8f0eed3e7e31") format("svg");
+font-weight: 400;
+font-style: normal;
+    }
+</style>
+<script type="text/javascript">
+var MTIProjectId='86852630-3e63-45b3-b9aa-b86577842a89';
+ (function() {
+        var mtiTracking = document.createElement('script');
+        mtiTracking.type='text/javascript';
+        mtiTracking.async='true';
+         mtiTracking.src='mtiFontTrackingCode.js';
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+   })();
+</script></textarea>
+            <h3>Licensing information should be included within the CSS</h3>
+<pre>/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/</pre>
+        </div>
+    </div>
+</body>
+</html>
