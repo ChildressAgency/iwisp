@@ -110,6 +110,32 @@ input[type="submit"]{
   transition:all .3s ease;
 }
 
+img.aligncenter,
+img.alignnone,
+.aligncenter img,
+.alignnone img{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin:25px auto;
+}
+img.alignleft,
+.alignleft img{
+  display:block;
+  max-width:100%;
+  height:auto;
+  float:left;
+  margin:25px 25px 25px 0px;
+}
+img.alignright,
+.alignright img{
+  display:block;
+  max-width:100%;
+  height:auto;
+  float:right;
+  margin:25px 0px 25px 25px;
+}
+
 .btn-main{
   display:inline-block;
   background-color:#006633;
@@ -495,6 +521,50 @@ footer .copyright>p>a:focus{
 #payOption2 .tier-body,
 #payOption3 .tier-body{
   padding-bottom:15px;
+}
+
+.search-filter .search,
+.search-filter .filter{
+  float:right;
+}
+.search-filter .search .input-group{
+  max-width:250px;
+}
+.search-filter .search .input-group-btn>.btn{
+  background-color:rgba(102,102,102,.2);
+  border-radius:0;
+  margin-left:0;
+}
+.search-filter .filter{
+  margin-left:20px;
+  padding-top:7px;
+}
+.search-filter .filter a{
+  color:#006633;
+}
+
+hr{
+  border-color:#b7b7b7;
+}
+
+.post-header h4{
+  color:#999;
+}
+.comments{
+  margin-top:40px;
+}
+.comments>h4{
+  color:#999;
+}
+.comments>h4>.show-comment-form{
+  color:#999;
+  display:inline-block;
+  margin-left:25px;
+  text-decoration:underline;
+}
+
+.leave-comment{
+  display:none;
 }
 
 
