@@ -294,18 +294,21 @@ img.alignright,
   font-size:28px;
   vertical-align:bottom;
 }
-.bottom-caption{
+.page-title{
   background-color:#006633;
   text-align:center;
   padding-top:40px;
   padding-bottom:40px;
   box-shadow:inset 0px 23px 40px -20px #000;
 }
-.bottom-caption p,
-.bottom-caption p>a{
+.page-title p,
+.page-title p>a{
   font-size:30px;
   color:#fff;
   font-family:Museo, serif;
+}
+.page-title h1{
+  color:#fff;
 }
 
 #main{
