@@ -98,7 +98,7 @@ body{
   background-size:cover;
 }
 
-h1{
+h1, h2{
   color:#006633;
   text-transform:uppercase;
   font-weight:500;
@@ -568,6 +568,33 @@ hr{
 
 .leave-comment{
   display:none;
+}
+
+.panel-group .panel-default{
+  border:none;
+  border-radius:0;
+  background-color:transparent;
+  box-shadow:none;
+}
+.panel-group .panel-heading{
+  background-color:#006633;
+  border-radius:0;
+}
+.panel-group .panel-title>a{
+  font-size:24px;
+  color:#fff;
+  text-transform:uppercase;
+  font-weight:300;
+}
+.panel-group .panel-title>a>.fa-caret-up{
+  float:right;
+  -webkit-transition:all .3 ease;
+  transition:all .3s ease;
+}
+.panel-group .panel-title>a.collapsed>.fa-caret-up{
+  -ms-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  transform:rotate(180deg);
 }
 
 
