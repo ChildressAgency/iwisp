@@ -89,6 +89,10 @@ font-weight: 900;
 font-style: normal;
     }
 
+
+html, body{
+  height:100%;
+}
 body{
   font-family:MuseoSans, sans-serif;
   font-weight:300;
@@ -96,6 +100,78 @@ body{
   background-image:url(images/cloud-bg.jpg);
   background-repeat:no-repeat;
   background-size:cover;
+}
+body.redirect-page{
+  background-image:none;
+  display:flex;
+  flex-direction:column;
+}
+.redirect-page header{
+  padding-top:60px;
+  padding-bottom:60px;
+}
+.redirect-page>hr{
+  border-width:3px;
+  border-color:#333;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.redirect-page .redirect-main{
+  padding-top:60px;
+  padding-bottom:60px;
+  text-align:center;
+  flex:1 0 auto;
+}
+.redirect-page .redirect-main p{
+  font-family:Museo, serif;
+  font-weight:500;
+}
+.redirect-page .redirect-main .btn-reactivate{
+  font-size:34px;
+  text-transform:uppercase;
+  display:inline-block;
+  margin-top:60px;
+  border:3px solid #333;
+  color:#333;
+  font-weight:500;
+  padding:10px 30px;
+  border-radius:40px;
+}
+.redirect-page .redirect-main .btn-reactivate:hover,
+.redirect-page .redirect-main .btn-reactivate:focus{
+  text-decoration:none;
+  background-color:#333;
+  color:#fff;
+}
+footer .social>a{
+  color:#fff;
+  opacity:.6;
+}
+footer .social>a>.fa-inverse{
+  color:#006633;
+}
+footer .social>a:hover,
+footer .social>a:focus{
+  opacity:1;
+}
+footer .contact-info{
+  color:#fff;
+  margin-top:25px;
+  margin-bottom:25px;
+}
+footer .contact-info>span{
+  display:inline-block;
+}
+footer .contact-info>span+span{
+  margin-left:20px;
+}
+footer .redirect-copyright{
+  color:#fff;
+  font-size:12px;
+}
+footer .redirect-copyright>a{
+  color:#fff;
 }
 
 h1{
@@ -675,6 +751,12 @@ hr{
   }
   #meetStaff .carousel-control{
     display:none;
+  }
+  footer .contact-info>span{
+    display:block;
+  }
+  footer .contact-info>span+span{
+    margin-left:0;
   }
 }
 @media (min-width:768px){
