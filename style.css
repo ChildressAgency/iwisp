@@ -597,6 +597,37 @@ hr{
   transform:rotate(180deg);
 }
 
+#aboutIntro{
+  background-color:#006633;
+  color:#fff;
+  padding-top:40px;
+  padding-bottom:40px;
+}
+
+#meetStaff{
+  background-color:#006633;
+  color:#fff;
+  padding:25px 60px;
+}
+#meetStaff>h2{
+  text-align:center;
+  margin-top:0;
+}
+#meetStaff .carousel-control{
+  font-size:50px;
+  top:40%;
+}
+#meetStaff .carousel-control.left,
+#meetStaff .carousel-control.right{
+  background-image:none;
+}
+#meetStaff .carousel-control.left{
+  left:-40px;
+}
+#meetStaff .carousel-control.right{
+  right:-40px;
+}
+
 
 @media (max-width:767px){
   .masthead{
@@ -638,6 +669,12 @@ hr{
     margin-left:auto;
     margin-right:auto;
     margin-top:40px;
+  }
+  #meetStaff{
+    padding:25px 15px;
+  }
+  #meetStaff .carousel-control{
+    display:none;
   }
 }
 @media (min-width:768px){
