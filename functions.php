@@ -293,3 +293,10 @@ if(function_exists('acf_add_options_page')){
     'redirect' => false
   ));
 }
+
+add_filter('body_class', 'iwisp_redirect_page_class');
+function iwisp_redirect_page_class(){
+  if(is_page('redirect')){
+    $classes[] = 'redirect-page';
+  }
+}
