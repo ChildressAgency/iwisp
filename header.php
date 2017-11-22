@@ -111,9 +111,11 @@
         </div>
       </div>
     </nav>
-    <div class="slogan">
-      <h1>Hi-Speed Internet Service<br />No Limits!</h1>
-    </div>
+    <?php if(is_front_page()): ?>
+      <div class="slogan">
+        <h1><?php the_field('slogan'); ?></h1>
+      </div>
+    <?php endif; ?>
     <section id="hero" class="hp-hero" style="background-image:url(images/mountains.jpg); background-position:center center;">
       <div class="container">
         <div class="hero-caption">
