@@ -112,19 +112,63 @@
       </div>
     </nav>
     <?php if(is_front_page()): ?>
+
       <div class="slogan">
         <h1><?php the_field('slogan'); ?></h1>
       </div>
-    <?php endif; ?>
-    <section id="hero" class="hp-hero" style="background-image:url(images/mountains.jpg); background-position:center center;">
-      <div class="container">
-        <div class="hero-caption">
-          <h2>Providing Hi-Speed Internet Service Where Others Have Failed.</h2>
-          <h3>What is a WiSP or wireless internet service provider?</h3>
-          <a href="#" class="btn-clear">Learn how you can get hi-speed internet now</a>
-          <p>PC World says WiSPs are the future of internet service</p>
-          <a href="#" class="read-more">Read More <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a>
+      <?php
+        $hero_image = get_stylesheet_directory_uri() . '/images/mountains.jpg';
+        $hero_image_css = 'background-position:center center;';
+        if(get_field('hero_image')){
+          $hero_image = get_field('hero_image');
+          $hero_image_css = get_field('hero_image_css');
+        }
+      ?>
+      <section id="hero" class="hp-hero" style="background-image:url(<?php echo $hero_image; ?>); <?php echo $hero_image_css; ?>">
+        <div class="container">
+          <div class="hero-caption">
+            <?php if(get_field('hero_caption_title')): ?>
+              <h2><?php the_field('hero_caption_title'); ?></h2>
+            <?php endif; if(get_field('hero_caption_subtitle')): ?>
+              <h3><?php the_field('hero_caption_subtitle'); ?></h3>
+            <?php endif; if(get_field('hero_caption_link')): ?>
+              <a href="<?php the_field('hero_caption_link'); ?>" class="btn-clear"><?php the_field('hero_caption_link_text'); ?></a>
+            <?php endif; if(get_field('hero_caption_below_link')): ?>
+              <p><?php the_field('hero_caption_below_link'); ?></p>
+            <?php endif; if(get_field('hero_caption_read_more_link')): ?>
+              <a href="<?php the_field('hero_caption_read_more_link'); ?>" class="read-more">Read More <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a>
+            <?php endif; ?>
+          </div>
         </div>
-      </div>
-    </section>
-  <?php endif; ?>
+      </section>
+
+    <?php else: //front_page ?>
+
+      <?php if(get_field('hero_image')): ?>
+        <section id="hero" class="hero" style="background-image:url(<?php the_field('hero_image'); ?>); <?php the_field('hero_image_css'); ?>"></section>
+      <?php endif; ?>
+
+      <?php if(get_field('page_title')): ?>
+        <div class="page-title">
+          <div class="container">
+            <?php if(is_page('contact')): ?>
+              <div class="row">
+                <div class="col-sm-3">
+                  <p><a href="tel:<?php the_field('phone', 'option'); ?>"><?php the_field('phone', 'option'); ?></a></p>
+                </div>
+                <div class="col-sm-6">
+                  <p><?php the_field('address', 'option'); ?>, <?php the_field('city_state_zip', 'option'); ?></p>
+                </div>
+                <div class="col-sm-3">
+                  <p><a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a></p>
+                </div>
+              </div>
+            <?php else: //contact_page ?>
+              <h1><?php the_field('page_title'); ?></h1>
+            <?php endif; //contact_page ?>
+          </div>
+        </div>
+      <?php endif; //page_title ?>
+
+    <?php endif; //front_page ?>
+  <?php endif; //redirect_page ?>
