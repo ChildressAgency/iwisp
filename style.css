@@ -319,6 +319,7 @@ img.alignright,
 }
 .hero{
   box-shadow:0px 25px 40px -15px #666;
+  padding-top:515px;
 }
 #hero.hp-hero{
   padding-top:40px;
@@ -788,5 +789,11 @@ hr{
   .col-sm-height{
     display:table-cell;
     float:none;
+  }
+}
+@media (max-width:991px){
+  .page-title p,
+  .page-title p>a{
+    font-size:22px;
   }
 }
