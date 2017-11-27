@@ -142,7 +142,7 @@
         </div>
       </section>
 
-    <?php else: //front_page ?>
+    <?php else: //not front_page ?>
 
       <?php if(get_field('hero_image')): ?>
         <section id="hero" class="hero" style="background-image:url(<?php the_field('hero_image'); ?>); <?php the_field('hero_image_css'); ?>"></section>
@@ -163,7 +163,7 @@
                   <p><a href="mailto:<?php the_field('email', 'option'); ?>"><?php the_field('email', 'option'); ?></a></p>
                 </div>
               </div>
-            <?php else: //contact_page ?>
+            <?php else: //not contact_page ?>
               <h1><?php the_field('page_title'); ?></h1>
             <?php endif; //contact_page ?>
           </div>
