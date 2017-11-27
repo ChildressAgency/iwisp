@@ -300,3 +300,17 @@ function iwisp_redirect_page_class(){
     $classes[] = 'redirect-page';
   }
 }
+
+add_filter('wpcf7_form_tag', 'iwisp_topic_list', 10, 2);
+function iwisp_topic_list($tag, $unused){
+  if($tag['name'] != 'topic'){ return $tag; }
+
+  $topics = get_field('contact_form_topics', 'option');
+  foreach($topics as $topic){
+    $tag['raw_values'][] = $topic['topic'];
+    $tag['values'][] = $topic['topic'];
+    $tag['labels'][] = $topic['topic'];
+    $tag['pipes']->pipes[] = array('before' => $topic['topic'], 'after' => $topic['topic']);
+  }
+  return $tag;
+}
