@@ -15,8 +15,8 @@
           </div>
           <div class="col-sm-4 col-sm-push-4">
             <a href="<?php echo home_url('faq'); ?>" class="faq-link">Frequently Asked Questions</a>
-            <?php if(get_field('google_plus_reviews_link')): ?>
-              <a href="<?php the_field('google_plus_reviews_link'); ?>" class="google-plus-review-link">
+            <?php if(get_field('google_plus_reviews_link', 'option')): ?>
+              <a href="<?php the_field('google_plus_reviews_link', 'option'); ?>" class="google-plus-review-link">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/google-plus-review-badge.jpg" class="img-responsive center-block" alt="Google Plus Review Badge" />
               </a>
             <?php endif; ?>
