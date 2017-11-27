@@ -40,7 +40,7 @@
             </div>
           </div>
           <div class="col-sm-5">
-            <a href="<?php the_field('make_payment_link', 'option'); ?>" class="payment-link">Make A Payment</a>
+            <a href="<?php echo home_url('payment'); ?>" class="payment-link">Make A Payment</a>
             <a href="<?php echo home_url('contact'); ?>" class="contact-link">Contact Us Now</a>
           </div>
           <div class="col-sm-2">
@@ -72,7 +72,7 @@
                   </div>
                 </div>
                 <div class="col-sm-5">
-                  <a href="<?php the_field('make_payment_link', 'option'); ?>" class="payment-link">Make A Payment</a>
+                  <a href="<?php echo home_url('payment'); ?>" class="payment-link">Make A Payment</a>
                   <a href="<?php echo home_url('contact'); ?>" class="contact-link">Contact Us Now</a>
                 </div>
                 <div class="col-sm-2">
