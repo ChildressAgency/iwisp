@@ -295,10 +295,11 @@ if(function_exists('acf_add_options_page')){
 }
 
 add_filter('body_class', 'iwisp_redirect_page_class');
-function iwisp_redirect_page_class(){
+function iwisp_redirect_page_class($classes){
   if(is_page('redirect')){
     $classes[] = 'redirect-page';
   }
+  return $classes;
 }
 
 add_filter('wpcf7_form_tag', 'iwisp_topic_list', 10, 2);
