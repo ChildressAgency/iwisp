@@ -18,7 +18,7 @@
           <h2>MEET OUR STAFF</h2>
           <div class="carousel-inner" role="listbox">
             <?php $i=0; while(have_rows('staff')): the_row(); ?>
-              <div class="item<?php if($i==0){ echo ' active'; ?>">
+              <div class="item<?php if($i==0){ echo ' active'; } ?>">
                 <div class="row">
                   <div class="col-sm-3">
                     <img src="<?php the_sub_field('staff_member_image'); ?>" class="img-responsive center-block img-circle" alt="" />

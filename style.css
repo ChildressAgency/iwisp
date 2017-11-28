@@ -705,6 +705,10 @@ hr{
   right:-40px;
 }
 
+.wpcf7-submit{
+  margin-left:16px;
+}
+
 
 @media (max-width:767px){
   .masthead{
