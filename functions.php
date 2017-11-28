@@ -317,7 +317,9 @@ add_filter('wpcf7_form_tag', 'iwisp_topic_list', 10, 2);
 function iwisp_topic_list($tag, $unused){
   if($tag['name'] != 'topic'){ return $tag; }
 
-  $topics = get_field('contact_form_topics', 'option');
+  $contact_page = get_page_by_path('contact');
+  $contact_page_id = $contact_page->ID;
+  $topics = get_field('contact_form_topics', $contact_page_id);
   foreach($topics as $topic){
     $tag['raw_values'][] = $topic['topic'];
     $tag['values'][] = $topic['topic'];

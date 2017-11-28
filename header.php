@@ -138,7 +138,7 @@
         <section id="hero" class="hero" style="background-image:url(<?php the_field('hero_image'); ?>); <?php the_field('hero_image_css'); ?>"></section>
       <?php endif; ?>
 
-      <?php if(get_field('page_title')): ?>
+      <?php if(get_field('page_title') || is_page('contact')): ?>
         <div class="page-title">
           <div class="container">
             <?php if(is_page('contact')): ?>

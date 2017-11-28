@@ -1,7 +1,7 @@
 <?php get_header(); ?>
   <main id="main">
     <div class="container">
-      <div class="google-map">
+      <div class="google-map embed-responsive embed-responsive-16by9">
         <?php the_field('coverage_map_code'); ?>
       </div>
       <div class="coverage-content">
