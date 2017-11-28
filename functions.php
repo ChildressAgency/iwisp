@@ -284,6 +284,17 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	}
 }
 
+function iwisp_fallback_header_menu(){ ?>
+  <ul class="nav nav-justified">
+    <li<?php if(is_front_page()){ echo ' class="active"'; } ?>><a href="<?php echo home_url(); ?>">Home</a></li>
+    <li<?php if(is_page('about')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('about'); ?>">About</a></li>
+    <li<?php if(is_page('pricing')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('pricing'); ?>">Pricing</a></li>
+    <li<?php if(is_page('contact')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('contact'); ?>">Contact</a></li>
+    <li<?php if(is_home()){ echo ' class="active"'; } ?>><a href="<?php echo home_url('blog'); ?>">Blog</a></li>
+    <li<?php if(is_page('support')){ echo ' class="active"'; } ?>><a href="<?php echo home_url('support'); ?>">Support</a></li>
+  </ul>
+<?php }
+
 if(function_exists('acf_add_options_page')){
   acf_add_options_page(array(
     'page_title' => 'General Settings',
