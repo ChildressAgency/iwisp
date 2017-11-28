@@ -1,6 +1,6 @@
 <?php get_header(); ?>
   <div class="slideshow">
-    <?php echo do_shortcode('[slideshow_shortcode]'); ?>
+    <?php echo do_shortcode(get_field('slideshow_shortcode')); ?>
   </div>
   <section id="aboutIntro">
     <div class="container">
