@@ -311,7 +311,7 @@ function iwisp_topic_list($tag, $unused){
     $tag['raw_values'][] = $topic['topic'];
     $tag['values'][] = $topic['topic'];
     $tag['labels'][] = $topic['topic'];
-    $tag['pipes']->pipes[] = array('before' => $topic['topic'], 'after' => $topic['topic']);
+    //$tag['pipes']->pipes[] = array('before' => $topic['topic'], 'after' => $topic['topic']);
   }
   return $tag;
 }
