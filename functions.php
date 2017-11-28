@@ -32,7 +32,7 @@ function iwisp_scripts(){
     '',
     false
   );
-
+/*
   wp_register_script(
     'google-maps',
     '//maps.googleapis.com/maps/api/js?key=' . get_field('google_maps_api_key', 'option'),
@@ -40,7 +40,7 @@ function iwisp_scripts(){
     '',
     false
   );
-
+*/
   wp_register_script(
     'jquery-libs',
     get_template_directory_uri() . '/js/jquery.libs.min.js',
@@ -59,7 +59,7 @@ function iwisp_scripts(){
   
   wp_enqueue_script('bootstrap-script');
   wp_enqueue_script('fontawesome');
-  wp_enqueue_script('google-maps');
+  //wp_enqueue_script('google-maps');
   if(is_page('about')){
     wp_enqueue_script('jquery-libs');
   }
