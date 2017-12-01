@@ -119,14 +119,12 @@
           <div class="hero-caption">
             <?php if(get_field('hero_caption_title')): ?>
               <h2><?php the_field('hero_caption_title'); ?></h2>
-            <?php endif; if(get_field('hero_caption_subtitle')): ?>
-              <h3><?php the_field('hero_caption_subtitle'); ?></h3>
-            <?php endif; if(get_field('hero_caption_link')): ?>
-              <a href="<?php the_field('hero_caption_link'); ?>" class="btn-clear"><?php the_field('hero_caption_link_text'); ?></a>
-            <?php endif; if(get_field('hero_caption_below_link')): ?>
-              <p><?php the_field('hero_caption_below_link'); ?></p>
-            <?php endif; if(get_field('hero_caption_read_more_link')): ?>
-              <a href="<?php the_field('hero_caption_read_more_link'); ?>" class="read-more">Read More <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i></a>
+            <?php endif; if(get_field('hero_link_1_text')): ?>
+              <h3><a href="<?php the_field('hero_link_1'); ?>" class="btn-clear"><?php the_field('hero_link_1_text'); ?></a></h3>
+            <?php endif; if(get_field('hero_link_2_text')): ?>
+              <a href="<?php the_field('hero_link_2'); ?>" class="btn-clear"><?php the_field('hero_link_2_text'); ?></a>
+            <?php endif; if(get_field('hero_link_3_text')): ?>
+              <p><a href="<?php the_field('hero_link_3'); ?>" class="btn-clear"<?php if(get_field('hero_link_3_type') == 'external'){ echo ' target="_blank"'; } ?>><?php the_field('hero_link_3_text'); ?></a></p>
             <?php endif; ?>
           </div>
         </div>

@@ -356,6 +356,12 @@ img.alignright,
   border-color:#006633;
   text-decoration:none;
 }
+.hero-caption h3>.btn-clear{
+  font-size:30px;
+}
+.hero-caption p>.btn-clear{
+  font-size:24px;
+}
 .hero-caption>p{
   margin-top:40px;
   font-size:24px;
