@@ -1,11 +1,11 @@
 <?php
-
+/*
 add_action('wp_footer', 'show_template');
 function show_template() {
 	global $template;
 	print_r($template);
 }
-
+*/
 add_action('wp_enqueue_scripts', 'jquery_cdn');
 function jquery_cdn(){
   if(!is_admin()){
@@ -312,7 +312,7 @@ function iwisp_redirect_page_class($classes){
   }
   return $classes;
 }
-
+/*
 add_filter('wpcf7_form_tag', 'iwisp_topic_list', 10, 2);
 function iwisp_topic_list($tag, $unused){
   if($tag['name'] != 'topic'){ return $tag; }
@@ -324,7 +324,9 @@ function iwisp_topic_list($tag, $unused){
     $tag['raw_values'][] = $topic['topic'];
     $tag['values'][] = $topic['topic'];
     $tag['labels'][] = $topic['topic'];
-    //$tag['pipes']->pipes[] = array('before' => $topic['topic'], 'after' => $topic['topic']);
+    //$tag['pipes']->pipes[] = array('before' => $topic['topic'], 'after' => $topic['email_to']);
+    $pipes[] = $topic['topic'] . '|' . $topic['email_to'];
   }
+  $tag['pipes'] = new WPCF7_Pipes($pipes);
   return $tag;
-}
+}*/
